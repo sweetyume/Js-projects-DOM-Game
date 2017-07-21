@@ -1,0 +1,43 @@
+* {
+  font-family: 'Lato', sans-serif;
+  text-align: center;
+  text-transform: uppercase;
+
+}
+.ion-ios-plus-outline, .ion-ios-loop, .ion-ios-download-outline{
+  color:#FD818E;
+}
+/*------------------------------------*\
+          MAIN PART
+\*------------------------------------*/
+.container-gamebox {
+  display: flex;
+
+}
+
+.gamebox {
+  display: flex;
+  /*flex-direction: column;*/
+  justify-content: center;
+}
+
+.gamebox h1 {
+}
+
+.left-half {
+  background-color: #F7F7F7;
+  flex: 1;
+  padding: 15%;
+}
+
+.right-half {
+  border-color: #FFFFFF;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  flex: 1;
+  padding: 15%;
+}
+.btn {
+  background-color: #FF1737;
+}
