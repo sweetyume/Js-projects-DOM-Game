@@ -1,55 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Ping Dice Game</title>
   <!-- POLICES -->
-  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
-<!-- STYLES -->
+  <link href="https://fonts.googleapis.com/css?family=Lato:300,400" rel="stylesheet">
+
+  <!-- STYLES -->
   <link rel="stylesheet" href="styles.css">
   <link rel="stylesheet" href="ionicons-2.0.1/css/ionicons.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 </head>
+
 <body>
-<div class="new-game">
-  <h1><i class="ion-ios-plus-outline"></i>New Game</h1>
 
-</div>
+  <div id="gamebox" class=" wrapper container-gamebox">
 
-<div id="gamebox" class="container-gamebox">
-
-  <div class="left-half locations">
-    <div>
-      <h1>Player 1</h1>
-      <p>72</p>
-      <input type="checkbox" id="myCheck" onmouseover="dice()" onclick="alert('dice')">
-
-      <button type="button" name="button" class="btn">Current</button>
-
+    <!-- PLAYER 1 -->
+    <div class="players left-half" id="player-1">
+      <div class="player-score">
+        <h1>Player 1 <i class="ion-record"></i></h1>
+        <p class="totalScore">0</p>
+      </div>
+      <div class="current-score-box">
+        <h3>Current</h3>
+        <p class="currentScore">0</p>
+      </div>
     </div>
-  </div>
-  <div class="right-half gamebox">
-    <div>
-      <h1>Player 2</h1>
-      <p>72</p>
-      <button type="button" name="button" class="btn">Current</button>
+    <!-- PLAYER 2   -->
+    <div class="players right-half" id="player-2">
+      <div class="player-score">
+        <h1>Player 2 <i class="ion-record"></i></h1>
+        <p class="totalScore">0</p>
+      </div>
+      <div class="current-score-box">
+        <h3>Current</h3>
+        <p class="currentScore">0</p>
+      </div>
     </div>
+    <!-- MIDDLE PART -->
+    <div id="middle-part">
+      <button id="new-game-btn"><i class="ion-ios-plus-outline"></i>New Game</button>
+      <img src="images/dice-1.png" alt="image Dés">
+      <button id="roll-dice-btn"><i class="ion-ios-loop btn"></i>Roll dice</button>
+      <button id="hold-btn"><i class="ion-ios-download-outline btn"></i>Hold</button>
+    </div>
+
+
   </div>
-</div>
 
-<div class="">
-  <p><i class="ion-ios-loop"></i>Roll dice</p>
-</div>
-<div class="">
-  <p><i class="ion-ios-download-outline"></i>Roll dice</p>
-</div>
+  <!-- <div class="right-half gamebox">
+      <div>
+        <button id="gamePlay">Cliquez-moi !</button>
+        <p>vous avez obtenu un <span id="dice">0</span> et un <span id="dice2">0</span>pour un score de <span id="currentScore">0</span></p>
+        <button id="desactiver">Désactiver le comptage</button>
 
+      </div>
+    </div> -->
 
-
-
-<script type="text/javascript" src="script.js">
-</script>
+  <script type="text/javascript" src="script.js">
+  </script>
 </body>
+
 </html>
