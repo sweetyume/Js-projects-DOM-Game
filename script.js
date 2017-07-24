@@ -56,7 +56,7 @@ function hold() {
     document.getElementById('totalScore-player-1').innerHTML =
       Number(document.getElementById("totalScore-player-1").innerHTML) + Number(totalSum.innerHTML);
     document.getElementById('currentScore-player-1').innerHTML = 0;
-    if (Number(document.getElementById('totalScore-player-1').innerHTML) >= 20) {
+    if (Number(document.getElementById('totalScore-player-1').innerHTML) >= 100) {
       document.getElementById('player-1').innerHTML = "Winner!";
       document.getElementById('player-1').style.fontWeight = "400";
       document.getElementById('player-1').style.fontSize = "30px";
@@ -69,7 +69,7 @@ function hold() {
     document.getElementById('totalScore-player-2').innerHTML =
       Number(document.getElementById("totalScore-player-2").innerHTML) + Number(totalSum2.innerHTML);
     document.getElementById('currentScore-player-2').innerHTML = 0;
-    if (Number(document.getElementById('totalScore-player-2').innerHTML) >= 20) {
+    if (Number(document.getElementById('totalScore-player-2').innerHTML) >= 100) {
       document.getElementById('player-2').innerHTML = "Winner!";
       document.getElementById('player-2').style.fontWeight = "400";
       document.getElementById('player-2').style.fontSize = "30px";
