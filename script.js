@@ -1,5 +1,4 @@
 var isActive = true;
-
 // Quand on clique sur new game, réinitialise, jeu commence
 function init() {
   // pour cacher le dé au début du jeu
@@ -13,11 +12,8 @@ function init() {
   document.getElementById('player-1').removeAttribute("style");
   document.getElementById('player-2').removeAttribute("style");
 
-
-
 }
 //  Lance du dé
-
 function rollDice() {
 
   var dice = Math.floor(Math.random() * 6 + 1);
@@ -29,7 +25,6 @@ function rollDice() {
       document.getElementById("currentScore-player-1").innerHTML =
         Number(document.getElementById("currentScore-player-1").innerHTML) + dice;
     }
-
 
   } else {
     if (dice == 1) {
@@ -111,34 +106,6 @@ function switchPlayers() {
 // diceDOM.style.display = "block";
 // diceDOM.src = 'images/dice-' + dice + '.png';
 
-//
-// var currentScore = 0;
-// document.getElementById("roll-dice-btn").addEventListener('click', rollDice());
-//
-// function holdScore() {
-//
-// }
-
-// console.log("vous avez obtenu un " + dice " pour un score de " + score);
-
-
-// randomimage = "images" +dice +".png";
-// document.getElementById('dice').src=randomImage;
-// var Dossier = 'images';
-// var Numero = 1;
-// var nom = new Array;
-// Nom[1] = "1.jpg"
-// Nom[2] = "2.jpg"
-// Nom[3] = "3.jpg"
-// Nom[4] = "4.jpg"
-// Nom[5] = "5.jpg"
-// Nom[6] = "6.jpg"
-
-
-// document.getElementById("desactiver").addEventListener("click", function () {
-//     document.getElementById("hold-btn").removeEventListener("click", gamePlay());
-// });
-
 
 // var dice = Math.floor(Math.random()*6+1);
 // var dice2 = Math.floor(Math.random()*6+1);
@@ -154,22 +121,3 @@ function switchPlayers() {
 // }
 //
 // console.log("vous avez obtenu un " + dice + ' et un ' + dice2 + " pour un score de " + score);
-
-// function gamePlay() {
-//   var dice = Math.floor(Math.random()*6+1);
-//   var dice2 = Math.floor(Math.random()*6+1);
-//   var score;
-//   if (dice == 1 || dice2 == 1) {
-//     score = 0;
-//   }
-//   else if (dice == dice2) {
-//     score = (dice + dice2) * 2;
-//   }
-//   else {
-//     score = dice + dice2;
-//   }
-//   console.log("vous avez obtenu un " + dice + ' et un ' + dice2 + " pour un score de " + score);
-//
-//
-// }
-//
