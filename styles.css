@@ -57,14 +57,17 @@ i, #middle-part i {
 .player-score h1 i {
   font-size: 20px;
 }
-
-.left-half {
+.isActive {
   background-color: #F7F7F7;
+
+}
+.player-1-box {
+  /*background-color: #F7F7F7;*/
   flex: 1;
   padding: 15%;
 }
 
-.right-half {
+.player-2-box {
   border-color: #FFFFFF;
   flex: 1;
   padding: 15%;
@@ -76,7 +79,9 @@ i, #middle-part i {
   font-size: 100px;
   margin: 40px 0;
 }
-
+/*.ion-record {
+  display: none;
+}*/
 
 /*------------------------------------*\
           MIDDLE PART

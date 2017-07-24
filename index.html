@@ -20,33 +20,35 @@
   <div id="gamebox" class=" wrapper container-gamebox">
 
     <!-- PLAYER 1 -->
-    <div class="players left-half" id="player-1">
+    <div class="players player-1-box isActive" >
       <div class="player-score">
-        <h1>Player 1 <i class="ion-record"></i></h1>
-        <p class="totalScore">0</p>
+        <h1 class="player-name" id="player-1">Player 1</h1>
+        <!-- <i class="ion-record"></i> -->
+        <p class="totalScore" id="totalScore-player-1">0</p>
       </div>
       <div class="current-score-box">
-        <h3>Current</h3>
-        <p class="currentScore">0</p>
+        <h3 class="current-score-name">Current</h3>
+        <p class="currentScore" id="currentScore-player-1">0</p>
       </div>
     </div>
     <!-- PLAYER 2   -->
-    <div class="players right-half" id="player-2">
+    <div class="players player-2-box">
       <div class="player-score">
-        <h1>Player 2 <i class="ion-record"></i></h1>
-        <p class="totalScore">0</p>
+        <h1 class="player-name" id="player-2">Player 2</h1>
+        <p class="totalScore" id="totalScore-player-2">0</p>
       </div>
       <div class="current-score-box">
-        <h3>Current</h3>
-        <p class="currentScore" id="currentScore">0</p>
+        <h3 class="current-score-name">Current</h3>
+        <p class="currentScore" id="currentScore-player-2">0</p>
       </div>
     </div>
     <!-- MIDDLE PART -->
     <div id="middle-part">
-      <button id="new-game-btn"><i class="ion-ios-plus-outline"></i>New Game</button>
-      <button id="dice"><img  src="images/dice-1.png" alt="image Dés"></button>
+      <button id="new-game-btn" onclick="init()"><i class="ion-ios-plus-outline"></i>New Game</button>
+      <!-- <button id="dice"><img  src="images/dice-1.png" alt="image Dés"></button> -->
+      <img src="images/dice-1.png" alt="dice image" class="dice" id="dice">
       <button id="roll-dice-btn" onclick="rollDice()"><i class="ion-ios-loop btn"></i>Roll dice</button>
-      <button id="hold-btn"><i class="ion-ios-download-outline btn"></i>Hold</button>
+      <button id="hold-btn" onclick="hold()"><i class="ion-ios-download-outline btn"></i>Hold</button>
     </div>
 
 
